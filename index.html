@@ -16,7 +16,7 @@
 </head>
  
 
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini" onload=display_ct()>
     <div class="wrapper">
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -30,13 +30,15 @@
                             <div class="card card-primary card-outline">
                                 <div class="card-body box-profile">
                                     <div class="text-center">
-                                        <img class="profile-user-img img-fluid img-circle"
-                                            src="static/img/profile-two.jpeg" alt="User profile picture">
+                                        <img class="profile-user-img img-fluid img-circle" src="static/img/profile.jpeg"
+                                            alt="User profile picture">
                                     </div>
                                     <hr>
                                     <h3 class="profile-username text-center">Jithendran Adikesavan</h3>
 
-                                    <p class="text-muted text-center">Jr. Data Scientist @ GyanData Pvt. Ltd.</p>
+                                    <p class="text-muted text-center">Data Scientist @ GyanData Pvt. Ltd.</p>
+
+                                    <p id="current_time" style="text-align: center;"></p>
                                 </div>
                                 <!-- /.card-body -->
 
@@ -45,15 +47,18 @@
 
                                     <div class="btn-group">
                                         <a type="button" class="btn btn-default btn-dark"
-                                            href="https://github.com/jithendran-adikesavan" target="_blank"><b>GitHub</b>
+                                            href="https://github.com/jithendran-adikesavan"
+                                            target="_blank"><b>GitHub</b>
                                         </a>
 
                                         <a type="button" class="btn btn-default"
-                                            href="https://www.instagram.com/jithendran.adikesavan/" target="_blank"><b>Instagram</b>
+                                            href="https://www.instagram.com/jithendran.adikesavan/"
+                                            target="_blank"><b>Instagram</b>
                                         </a>
 
                                         <a type="button" class="btn btn-default btn-primary"
-                                            href="https://www.linkedin.com/in/jithendran-a/" target="_blank"><b>LinkedIn</b></a>
+                                            href="https://www.linkedin.com/in/jithendran-a/"
+                                            target="_blank"><b>LinkedIn</b></a>
                                     </div>
 
                                 </div>
@@ -77,342 +82,246 @@
 
                                         <a type="button"
                                             href="https://drive.google.com/file/d/14czojcFZjac39k8jqfO0DeG6rveSaiwj/view?usp=sharing"
-                                            class="btn btn-link">Resume</button>
+                                            class="btn btn-link">Resume</a>
                                     </ul>
                                 </div><!-- /.card-header -->
                                 <div class="card-body">
                                     <div class="tab-content">
                                         <div class="active tab-pane" id="about-me">
-                                            <!-- Post -->
-                                            <div class="post">
-                                                <div class="user-block">
-                                                    <img class="img-circle img-bordered-sm"
-                                                        src="../../dist/img/user1-128x128.jpg" alt="user image">
-                                                    <span class="username">
-                                                        <a href="#">Jonathan Burke Jr.</a>
-                                                        <a href="#" class="float-right btn-tool"><i
-                                                                class="fas fa-times"></i></a>
-                                                    </span>
-                                                    <span class="description">Shared publicly - 7:30 PM today</span>
-                                                </div>
-                                                <!-- /.user-block -->
-                                                <p>
-                                                    Lorem ipsum represents a long-held tradition for designers,
-                                                    typographers and the like. Some people hate it and argue for
-                                                    its demise, but others ignore the hate as they create awesome
-                                                    tools to help create filler text for everyone from bacon lovers
-                                                    to Charlie Sheen fans.
-                                                </p>
-
-                                                <p>
-                                                    <a href="#" class="link-black text-sm mr-2"><i
-                                                            class="fas fa-share mr-1"></i> Share</a>
-                                                    <a href="#" class="link-black text-sm"><i
-                                                            class="far fa-thumbs-up mr-1"></i> Like</a>
-                                                    <span class="float-right">
-                                                        <a href="#" class="link-black text-sm">
-                                                            <i class="far fa-comments mr-1"></i> Comments (5)
-                                                        </a>
-                                                    </span>
-                                                </p>
-
-                                                <input class="form-control form-control-sm" type="text"
-                                                    placeholder="Type a comment">
-                                            </div>
-                                            <!-- /.post -->
+                                            <p>
+                                                A computer science graduate working as a Junior Data Scientist at <a
+                                                    href="https://www.gyandata.com" target=”_blank”><img
+                                                        src="static/img/gdpl-logo.jpg" width="50">GyanData Pvt Ltd</a>
+                                                with strong capabilities in developing data science product features,
+                                                and developing
+                                                numerically intensive algorithms
+                                            </p>
                                         </div>
 
                                         <div class="tab-pane" id="education">
                                             <ul class="list-group list-group-unbordered mb-3">
                                                 <li class="list-group-item">
-                                                    <button type="button" class="btn btn-dark btn-block">
-                                                        <b>GitHub</b> <span class="badge badge-light">4</span>
-                                                    </button>
+                                                    <p>
+                                                        <b>School</b> <span class="badge badge-dark">2008 - 15</span>
+                                                        <span class="badge badge-light">Class 6 to 12</span>
+                                                    </p>
+                                                    <p>
+                                                        <a href="http://shrishti.org/" target=”_blank”>Shrishti
+                                                            Vidhyashram Senior Secondary School</a>
+                                                        <hr>
+                                                        A serene campus rich with flora and fauna on a 7-acre piece of
+                                                        land with an excellent infrastructure and teaching faculties,
+                                                        ensured my growth in a wide range of skills.
+                                                        <hr>
+                                                        Shrishti helped me
+                                                        secure a CGPA of <b>10</b> in Secondary School in 2013 and
+                                                        <b>94.4</b>%
+                                                        in Senior Secondary in 2015.
+                                                        <hr>
+                                                        Receiving an prestigious award <b>Best Outgoing Student</b> for
+                                                        the batch of 2014-15 was the topping on the cake.
+                                                    </p>
                                                 </li>
                                                 <li class="list-group-item">
 
-                                                    <button type="button" class="btn btn-primary btn-block">
-                                                        <b>LinkedIn</b> <span class="badge badge-light">543</span>
-                                                    </button>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <button type="button" class="btn btn-danger btn-block">
-                                                        <b>Instagram</b> <span class="badge badge-light">13,287</span>
-                                                    </button>
+                                                    <p>
+                                                        <b>Undergraduate</b> <span class="badge badge-dark">2015 -
+                                                            19</span>
+                                                        <span class="badge badge-light">Bachelor of Technology</span>
+                                                    </p>
+                                                    <p>
+                                                        <a href="https://www.sastra.edu/" target=”_blank”>SASTRA Deemed
+                                                            University</a>
+                                                        <hr>
+                                                        Located in Thanjavur, a city known for its cultural and
+                                                        historical importance, Shanmugha Arts, Science, Technology and
+                                                        Research Academy (SASTRA) is one of India's premier
+                                                        institutions offering programs in a wide variety of domains
+                                                        <hr>
+                                                        Majored in Computer Science and Engineering with a CGPA of 8.57
+                                                        <hr>
+                                                        Member of <a
+                                                            href="https://www.linkedin.com/company/dakshsastra/?originalSubdomain=in"
+                                                            target=”_blank”>DASKH</a> Merchandise Team, <a
+                                                            href="https://www.instagram.com/sastra_nss/?hl=en"
+                                                            target=”_blank”>NSS Team</a> and University
+                                                        Handball Team broadened my horizon to make me a multi-facet team
+                                                        player.
+                                                        The experience gained by being a member of these teams helps me
+                                                        a great deal in leading a balanced professional life.
+                                                    </p>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <!-- /.tab-pane -->
-                                        <div class="tab-pane" id="timeline">
-                                            <!-- The timeline -->
-                                            <div class="timeline timeline-inverse">
-                                                <!-- timeline time label -->
-                                                <div class="time-label">
-                                                    <span class="bg-danger">
-                                                        10 Feb. 2014
-                                                    </span>
-                                                </div>
-                                                <!-- /.timeline-label -->
-                                                <!-- timeline item -->
-                                                <div>
-                                                    <i class="fas fa-envelope bg-primary"></i>
-
-                                                    <div class="timeline-item">
-                                                        <span class="time"><i class="far fa-clock"></i> 12:05</span>
-
-                                                        <h3 class="timeline-header"><a href="#">Support Team</a> sent
-                                                            you an email</h3>
-
-                                                        <div class="timeline-body">
-                                                            Etsy doostang zoodles disqus groupon greplin oooj voxy
-                                                            zoodles,
-                                                            weebly ning heekya handango imeem plugg dopplr jibjab,
-                                                            movity
-                                                            jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo
-                                                            kaboodle
-                                                            quora plaxo ideeli hulu weebly balihoo...
-                                                        </div>
-                                                        <div class="timeline-footer">
-                                                            <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                                                            <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END timeline item -->
-                                                <!-- timeline item -->
-                                                <div>
-                                                    <i class="fas fa-user bg-info"></i>
-
-                                                    <div class="timeline-item">
-                                                        <span class="time"><i class="far fa-clock"></i> 5 mins
-                                                            ago</span>
-
-                                                        <h3 class="timeline-header border-0"><a href="#">Sarah Young</a>
-                                                            accepted your friend request
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <!-- END timeline item -->
-                                                <!-- timeline item -->
-                                                <div>
-                                                    <i class="fas fa-comments bg-warning"></i>
-
-                                                    <div class="timeline-item">
-                                                        <span class="time"><i class="far fa-clock"></i> 27 mins
-                                                            ago</span>
-
-                                                        <h3 class="timeline-header"><a href="#">Jay White</a> commented
-                                                            on your post</h3>
-
-                                                        <div class="timeline-body">
-                                                            Take me to your leader!
-                                                            Switzerland is small and neutral!
-                                                            We are more like Germany, ambitious and misunderstood!
-                                                        </div>
-                                                        <div class="timeline-footer">
-                                                            <a href="#" class="btn btn-warning btn-flat btn-sm">View
-                                                                comment</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END timeline item -->
-                                                <!-- timeline time label -->
-                                                <div class="time-label">
-                                                    <span class="bg-success">
-                                                        3 Jan. 2014
-                                                    </span>
-                                                </div>
-                                                <!-- /.timeline-label -->
-                                                <!-- timeline item -->
-                                                <div>
-                                                    <i class="fas fa-camera bg-purple"></i>
-
-                                                    <div class="timeline-item">
-                                                        <span class="time"><i class="far fa-clock"></i> 2 days
-                                                            ago</span>
-
-                                                        <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded
-                                                            new photos</h3>
-
-                                                        <div class="timeline-body">
-                                                            <img src="https://placehold.it/150x100" alt="...">
-                                                            <img src="https://placehold.it/150x100" alt="...">
-                                                            <img src="https://placehold.it/150x100" alt="...">
-                                                            <img src="https://placehold.it/150x100" alt="...">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END timeline item -->
-                                                <div>
-                                                    <i class="far fa-clock bg-gray"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- /.tab-pane -->
 
                                         <div class="tab-pane" id="skills">
-                                            <form class="form-horizontal">
-                                                <div class="form-group row">
-                                                    <label for="inputName" class="col-sm-2 col-form-label">Name</label>
-                                                    <div class="col-sm-10">
-                                                        <input type="email" class="form-control" id="inputName"
-                                                            placeholder="Name">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="inputEmail"
-                                                        class="col-sm-2 col-form-label">Email</label>
-                                                    <div class="col-sm-10">
-                                                        <input type="email" class="form-control" id="inputEmail"
-                                                            placeholder="Email">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="inputName2" class="col-sm-2 col-form-label">Name</label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" id="inputName2"
-                                                            placeholder="Name">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="inputExperience"
-                                                        class="col-sm-2 col-form-label">Experience</label>
-                                                    <div class="col-sm-10">
-                                                        <textarea class="form-control" id="inputExperience"
-                                                            placeholder="Experience"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <label for="inputSkills"
-                                                        class="col-sm-2 col-form-label">Skills</label>
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" id="inputSkills"
-                                                            placeholder="Skills">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="offset-sm-2 col-sm-10">
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox"> I agree to the <a href="#">terms
-                                                                    and conditions</a>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row">
-                                                    <div class="offset-sm-2 col-sm-10">
-                                                        <button type="submit" class="btn btn-danger">Submit</button>
-                                                    </div>
-                                                </div>
-                                            </form>
+
+                                            <h4>Programming Languages</h4>
+
+                                            <table class="table m-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Language</th>
+                                                        <th>Experience Level</th>
+                                                        <th>Interest Rating</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Python</td>
+                                                        <td><span class="badge badge-success">Professional</span></td>
+                                                        <td>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                                    role="progressbar" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width: 75%"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Java</td>
+                                                        <td><span class="badge badge-info">Professional</span></td>
+                                                        <td>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                                                                    role="progressbar" aria-valuenow="60"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width: 60%"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>C++</td>
+                                                        <td><span class="badge badge-warning">Academic</span></td>
+                                                        <td>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                                                    role="progressbar" aria-valuenow="50"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width: 50%"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>C</td>
+                                                        <td><span class="badge badge-warning">Academic</span></td>
+                                                        <td>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-striped progress-bar bg-warning"
+                                                                    role="progressbar" aria-valuenow="50"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width: 50%"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>R</td>
+                                                        <td><span class="badge badge-danger">Novice</span></td>
+                                                        <td>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-striped progress-bar bg-danger"
+                                                                    role="progressbar" aria-valuenow="30"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width: 30%"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <hr>
+
+                                            <h4>Technologies</h4>
+                                            <table class="table m-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Technology</th>
+                                                        <th>Experience Level</th>
+                                                        <th>Interest Rating</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>RDBMS</td>
+                                                        <td><span class="badge badge-success">Professional</span></td>
+                                                        <td>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                                    role="progressbar" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width: 75%"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>git</td>
+                                                        <td><span class="badge badge-success">Professional</span></td>
+                                                        <td>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                                    role="progressbar" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width: 75%"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Machine Learning</td>
+                                                        <td><span class="badge badge-info">Professional</span></td>
+                                                        <td>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                                                                    role="progressbar" aria-valuenow="60"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width: 60%"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Docker / DevOps</td>
+                                                        <td><span class="badge badge-info">Professional</span></td>
+                                                        <td>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-striped progress-bar bg-info"
+                                                                    role="progressbar" aria-valuenow="60"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width: 60%"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cloud</td>
+                                                        <td><span class="badge badge-warning">Academic</span></td>
+                                                        <td>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-striped progress-bar bg-warning"
+                                                                    role="progressbar" aria-valuenow="50"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width: 50%"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>NoSQL</td>
+                                                        <td><span class="badge badge-danger">Novice</span></td>
+                                                        <td>
+                                                            <div class="progress">
+                                                                <div class="progress-bar progress-bar-striped progress-bar bg-danger"
+                                                                    role="progressbar" aria-valuenow="30"
+                                                                    aria-valuemin="0" aria-valuemax="100"
+                                                                    style="width: 30%"></div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
                                         </div>
                                         <!-- /.tab-pane -->
 
                                         <div class="tab-pane" id="projects">
-                                            <!-- The timeline -->
-                                            <div class="timeline timeline-inverse">
-                                                <!-- timeline time label -->
-                                                <div class="time-label">
-                                                    <span class="bg-danger">
-                                                        10 Feb. 2014
-                                                    </span>
-                                                </div>
-                                                <!-- /.timeline-label -->
-                                                <!-- timeline item -->
-                                                <div>
-                                                    <i class="fas fa-envelope bg-primary"></i>
-
-                                                    <div class="timeline-item">
-                                                        <span class="time"><i class="far fa-clock"></i> 12:05</span>
-
-                                                        <h3 class="timeline-header"><a href="#">Support Team</a> sent
-                                                            you an email</h3>
-
-                                                        <div class="timeline-body">
-                                                            Etsy doostang zoodles disqus groupon greplin oooj voxy
-                                                            zoodles,
-                                                            weebly ning heekya handango imeem plugg dopplr jibjab,
-                                                            movity
-                                                            jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo
-                                                            kaboodle
-                                                            quora plaxo ideeli hulu weebly balihoo...
-                                                        </div>
-                                                        <div class="timeline-footer">
-                                                            <a href="#" class="btn btn-primary btn-sm">Read more</a>
-                                                            <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END timeline item -->
-                                                <!-- timeline item -->
-                                                <div>
-                                                    <i class="fas fa-user bg-info"></i>
-
-                                                    <div class="timeline-item">
-                                                        <span class="time"><i class="far fa-clock"></i> 5 mins
-                                                            ago</span>
-
-                                                        <h3 class="timeline-header border-0"><a href="#">Sarah Young</a>
-                                                            accepted your friend request
-                                                        </h3>
-                                                    </div>
-                                                </div>
-                                                <!-- END timeline item -->
-                                                <!-- timeline item -->
-                                                <div>
-                                                    <i class="fas fa-comments bg-warning"></i>
-
-                                                    <div class="timeline-item">
-                                                        <span class="time"><i class="far fa-clock"></i> 27 mins
-                                                            ago</span>
-
-                                                        <h3 class="timeline-header"><a href="#">Jay White</a> commented
-                                                            on your post</h3>
-
-                                                        <div class="timeline-body">
-                                                            Take me to your leader!
-                                                            Switzerland is small and neutral!
-                                                            We are more like Germany, ambitious and misunderstood!
-                                                        </div>
-                                                        <div class="timeline-footer">
-                                                            <a href="#" class="btn btn-warning btn-flat btn-sm">View
-                                                                comment</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END timeline item -->
-                                                <!-- timeline time label -->
-                                                <div class="time-label">
-                                                    <span class="bg-success">
-                                                        3 Jan. 2014
-                                                    </span>
-                                                </div>
-                                                <!-- /.timeline-label -->
-                                                <!-- timeline item -->
-                                                <div>
-                                                    <i class="fas fa-camera bg-purple"></i>
-
-                                                    <div class="timeline-item">
-                                                        <span class="time"><i class="far fa-clock"></i> 2 days
-                                                            ago</span>
-
-                                                        <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded
-                                                            new photos</h3>
-
-                                                        <div class="timeline-body">
-                                                            <img src="https://placehold.it/150x100" alt="...">
-                                                            <img src="https://placehold.it/150x100" alt="...">
-                                                            <img src="https://placehold.it/150x100" alt="...">
-                                                            <img src="https://placehold.it/150x100" alt="...">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- END timeline item -->
-                                                <div>
-                                                    <i class="far fa-clock bg-gray"></i>
-                                                </div>
-                                            </div>
+                                            <p>Yet to be filled</p>
                                         </div>
 
                                         <div class="tab-pane" id="resume">
@@ -446,3 +355,31 @@
 <script src="static/js/adminlte.min.js"></script>
 <!-- Demo JS (Not to be used in Production) -->
 <script src="static/js/demo.js"></script>
+
+<script type="text/javascript">
+    function display_c() {
+        var refresh = 1000; // Refresh rate in milli seconds
+        mytime = setTimeout('display_ct()', refresh)
+    }
+
+    function display_ct() {
+        var x = new Date()
+        var month = x.getMonth() + 1;
+        var day = x.getDate();
+        var year = x.getFullYear();
+        if (month < 10) { month = '0' + month; }
+        if (day < 10) { day = '0' + day; }
+        var x3 = day + '-' + month + '-' + year;
+
+        // time part //
+        var hour = x.getHours();
+        var minute = x.getMinutes();
+        var second = x.getSeconds();
+        if (hour < 10) { hour = '0' + hour; }
+        if (minute < 10) { minute = '0' + minute; }
+        if (second < 10) { second = '0' + second; }
+        var x3 = x3 + ' ' + hour + ':' + minute + ':' + second
+        document.getElementById('current_time').innerHTML = x3;
+        display_c();
+    }
+</script>
