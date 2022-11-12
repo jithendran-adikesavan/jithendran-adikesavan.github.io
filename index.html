@@ -10,6 +10,7 @@
 
     <title>Jithendran Adikesavan</title>
 
+    <link rel="stylesheet" href="static/css/app.css">
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/bootstrap-grid.min.css">
 
@@ -30,13 +31,13 @@
                             <div class="card card-primary card-outline">
                                 <div class="card-body box-profile">
                                     <div class="text-center">
-                                        <img class="profile-user-img img-fluid img-circle" src="static/img/profile.jpeg"
-                                            alt="User profile picture">
+                                        <img class="profile-user-img img-fluid img-circle profile-picture"
+                                            src="static/img/profile.jpeg" alt="User profile picture">
                                     </div>
                                     <hr>
                                     <h3 class="profile-username text-center">Jithendran Adikesavan</h3>
 
-                                    <p class="text-muted text-center">Data Scientist @ GyanData Pvt. Ltd.</p>
+                                    <p class="text-muted text-center">Full Stack Engineer</p>
 
                                     <p id="current_time" style="text-align: center;"></p>
                                 </div>
@@ -44,23 +45,23 @@
 
                                 <div class="card-footer">
                                     <h5 class="profile-username text-center">Find me on</h5>
+                                    <div class="text-center">
+                                        <div class="btn-group">
+                                            <a type="button" class="btn btn-default btn-dark"
+                                                href="https://github.com/jithendran-adikesavan"
+                                                target="_blank"><b>GitHub</b>
+                                            </a>
 
-                                    <div class="btn-group">
-                                        <a type="button" class="btn btn-default btn-dark"
-                                            href="https://github.com/jithendran-adikesavan"
-                                            target="_blank"><b>GitHub</b>
-                                        </a>
+                                            <a type="button" class="btn btn-default" style="color: #f10767;"
+                                                href="https://www.instagram.com/jithendran.adikesavan/"
+                                                target="_blank"><b>Instagram</b>
+                                            </a>
 
-                                        <a type="button" class="btn btn-default"
-                                            href="https://www.instagram.com/jithendran.adikesavan/"
-                                            target="_blank"><b>Instagram</b>
-                                        </a>
-
-                                        <a type="button" class="btn btn-default btn-primary"
-                                            href="https://www.linkedin.com/in/jithendran-a/"
-                                            target="_blank"><b>LinkedIn</b></a>
+                                            <a type="button" class="btn btn-default btn-primary"
+                                                href="https://www.linkedin.com/in/jithendran-a/"
+                                                target="_blank"><b>LinkedIn</b></a>
+                                        </div>
                                     </div>
-
                                 </div>
                             </div>
                             <!-- /.card -->
@@ -73,12 +74,16 @@
                                     <ul class="nav nav-pills">
                                         <li class="nav-item"><a class="nav-link active" href="#about-me"
                                                 data-toggle="tab">About Me</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#experience"
+                                                data-toggle="tab">Experience</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#education"
                                                 data-toggle="tab">Education</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#skills"
                                                 data-toggle="tab">Skills</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#projects"
                                                 data-toggle="tab">Projects</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="#publications"
+                                                data-toggle="tab">Publications</a></li>
 
                                         <a type="button"
                                             href="https://drive.google.com/file/d/1l86zbgE3gnmfjfBqUAieoeJaR0OVJUlY/view?usp=sharing"
@@ -89,27 +94,60 @@
                                     <div class="tab-content">
                                         <div class="active tab-pane" id="about-me">
                                             <p>
-                                                A computer science graduate working as a Junior Data Scientist at <a
-                                                    href="https://www.gyandata.com" target=”_blank”><img
-                                                        src="static/img/gdpl-logo.jpg" width="50">GyanData Pvt Ltd</a>
-                                                with strong capabilities in developing data science product features,
-                                                and developing
-                                                numerically intensive algorithms
+
+                                                I am a full stack engineer passionate about designing and developing
+                                                products
+                                                in AI with interests in machine learning and data science, along with
+                                                strong capabilities in data engineering and developing numerically
+                                                intensive algorithms.
                                             </p>
+                                            <p>
+                                                I am currently pursuing MSc in Advanced Computer
+                                                Science @ <a href="https://www.sheffield.ac.uk" target=”_blank”>The
+                                                    University of Sheffield</a>, UK
+                                            </p>
+                                            <p>
+                                                I was working with in the past @ <a href="https://www.gyandata.com"
+                                                    target=”_blank”>gyandata</a>
+                                                as a Junior Data Scientist.
+                                            </p>
+                                        </div>
+
+                                        <div class="tab-pane" id="experience">
+                                            <ul class="list-group list-group-unbordered mb-3">
+                                                <li class="list-group-item">
+                                                    <p>
+                                                        <b>gyandata</b> <span class="badge badge-dark">2019-2022</span>
+                                                        <span class="badge badge-light">Junior Data Scientist</span>
+                                                        <span class="badge badge-light">Python Developer</span>
+                                                    </p>
+                                                    <p>
+                                                        <a href="http://gyandata.com/" target=”_blank”></a>
+                                                        <hr>
+                                                        Member of the development team while delivering applications to
+                                                        key clients in engineering industries (refrigeration, solar
+                                                        power plant, supply-chain management etc.,)
+                                                        <hr>
+                                                        Mentored the Python-101 training program responsible for
+                                                        preparing new hires of the company to industry standards of
+                                                        coding
+                                                    </p>
+                                                </li>
+                                            </ul>
                                         </div>
 
                                         <div class="tab-pane" id="education">
                                             <ul class="list-group list-group-unbordered mb-3">
                                                 <li class="list-group-item">
                                                     <p>
-                                                        <b>School</b> <span class="badge badge-dark">2008 - 15</span>
-                                                        <span class="badge badge-light">Class 6 to 12</span>
+                                                        <b>School</b> <span class="badge badge-dark">2001 - 15</span>
+                                                        <span class="badge badge-light">10+2</span>
                                                     </p>
                                                     <p>
                                                         <a href="http://shrishti.org/" target=”_blank”>Shrishti
                                                             Vidhyashram Senior Secondary School</a>
                                                         <hr>
-                                                        A serene campus rich with flora and fauna on a 7-acre piece of
+                                                        A serene campus on a 7-acre piece of
                                                         land with an excellent infrastructure and teaching faculties,
                                                         ensured my growth in a wide range of skills.
                                                         <hr>
@@ -151,172 +189,188 @@
                                                         a great deal in leading a balanced professional life.
                                                     </p>
                                                 </li>
+
+                                                <li class="list-group-item">
+
+                                                    <p>
+                                                        <b>Postgradurate</b> <span class="badge badge-dark">2022 -
+                                                            Present</span>
+                                                        <span class="badge badge-light">Master of Science</span>
+                                                    </p>
+                                                    <p>
+                                                        <a href="https://www.sheffield.ac.uk/"
+                                                            target=”_blank”>University of Sheffield</a>
+                                                        <hr>
+                                                        Currently pursuing MSc in Advanced Computer Science in a
+                                                        world-class university, among the top 100 institutes in the
+                                                        world, helps in getting global exposure and honing technical
+                                                        skills
+                                                        <hr>
+                                                        Member of a 3 member team which won the HackSheffield 7, a
+                                                        hackathon organized the Computer Society of Sheffield and Major
+                                                        League Hacking (MLH)
+                                                    </p>
+                                                </li>
+
                                             </ul>
                                         </div>
 
                                         <div class="tab-pane" id="skills">
+                                            <div class="card">
+                                                <div class="card-header p-2">
+                                                    <ul class="nav nav-pills">
+                                                        <li class="nav-item"><a class="nav-link active"
+                                                                href="#programming" data-toggle="tab">Programming
+                                                                Skills</a>
+                                                        </li>
+                                                        <li class="nav-item"><a class="nav-link" href="#technical"
+                                                                data-toggle="tab">Technologies Skills</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#language"
+                                                                data-toggle="tab">Language Skills</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#soft-skills"
+                                                                data-toggle="tab">Soft Skills</a></li>
+                                                    </ul>
+                                                </div><!-- /.card-header -->
+                                                <div class="card-body">
+                                                    <div class="tab-content">
+                                                        <div class="active tab-pane" id="programming">
+                                                            <table class="table m-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Language</th>
+                                                                        <th>Experience Level</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Python</td>
+                                                                        <td><span
+                                                                                class="badge badge-success">Professional</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Java</td>
+                                                                        <td><span
+                                                                                class="badge badge-warning">Academic</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Kotlin</td>
+                                                                        <td><span
+                                                                                class="badge badge-warning">Academic</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>C++</td>
+                                                                        <td><span
+                                                                                class="badge badge-warning">Academic</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
 
-                                            <h4>Programming Languages</h4>
+                                                        <div class="tab-pane" id="technical">
+                                                            <table class="table m-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Technology</th>
+                                                                        <th>Experience Level</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>RDBMS</td>
+                                                                        <td><span
+                                                                                class="badge badge-success">Professional</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>git</td>
+                                                                        <td><span
+                                                                                class="badge badge-success">Professional</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Machine Learning</td>
+                                                                        <td><span
+                                                                                class="badge badge-info">Academic</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Android</td>
+                                                                        <td><span
+                                                                                class="badge badge-info">Academic</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Docker / DevOps</td>
+                                                                        <td><span
+                                                                                class="badge badge-danger">Novice</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Cloud</td>
+                                                                        <td><span
+                                                                                class="badge badge-danger">Novice</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>NoSQL</td>
+                                                                        <td><span
+                                                                                class="badge badge-danger">Novice</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
 
-                                            <table class="table m-0">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Language</th>
-                                                        <th>Experience Level</th>
-                                                        <th>Interest Rating</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>Python</td>
-                                                        <td><span class="badge badge-success">Professional</span></td>
-                                                        <td>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
-                                                                    role="progressbar" aria-valuenow="75"
-                                                                    aria-valuemin="0" aria-valuemax="100"
-                                                                    style="width: 75%"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Java</td>
-                                                        <td><span class="badge badge-info">Professional</span></td>
-                                                        <td>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
-                                                                    role="progressbar" aria-valuenow="60"
-                                                                    aria-valuemin="0" aria-valuemax="100"
-                                                                    style="width: 60%"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>C++</td>
-                                                        <td><span class="badge badge-warning">Academic</span></td>
-                                                        <td>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
-                                                                    role="progressbar" aria-valuenow="50"
-                                                                    aria-valuemin="0" aria-valuemax="100"
-                                                                    style="width: 50%"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>C</td>
-                                                        <td><span class="badge badge-warning">Academic</span></td>
-                                                        <td>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-striped progress-bar bg-warning"
-                                                                    role="progressbar" aria-valuenow="50"
-                                                                    aria-valuemin="0" aria-valuemax="100"
-                                                                    style="width: 50%"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>R</td>
-                                                        <td><span class="badge badge-danger">Novice</span></td>
-                                                        <td>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-striped progress-bar bg-danger"
-                                                                    role="progressbar" aria-valuenow="30"
-                                                                    aria-valuemin="0" aria-valuemax="100"
-                                                                    style="width: 30%"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                                        <div class="tab-pane" id="language">
+                                                            <table class="table m-0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Language</th>
+                                                                        <th>Ability</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Tamil</td>
+                                                                        <td><span class="badge badge-success">Mother
+                                                                                Tongue</span>
+                                                                            <span class="badge badge-dark">Speak</span>
+                                                                            <span class="badge badge-dark">Read</span>
+                                                                            <span class="badge badge-dark">Write</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>English</td>
+                                                                        <td><span class="badge badge-dark">Speak</span>
+                                                                            <span class="badge badge-dark">Read</span>
+                                                                            <span class="badge badge-dark">Write</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Hindi</td>
+                                                                        <td><span class="badge badge-dark">Read</span>
+                                                                            <span class="badge badge-dark">Write</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
 
-                                            <hr>
+                                                        <div class="tab-pane" id="soft-skills">
+                                                            
+                                                            <span class="badge badge-dark">Organisation</span>
+                                                            <span class="badge badge-dark">Analytical Thinking</span>
+                                                            <span class="badge badge-dark">Active Listening</span>
+                                                            <span class="badge badge-dark">Problem Solving</span>
+                                                        </div>
 
-                                            <h4>Technologies</h4>
-                                            <table class="table m-0">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Technology</th>
-                                                        <th>Experience Level</th>
-                                                        <th>Interest Rating</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>RDBMS</td>
-                                                        <td><span class="badge badge-success">Professional</span></td>
-                                                        <td>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
-                                                                    role="progressbar" aria-valuenow="75"
-                                                                    aria-valuemin="0" aria-valuemax="100"
-                                                                    style="width: 75%"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>git</td>
-                                                        <td><span class="badge badge-success">Professional</span></td>
-                                                        <td>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
-                                                                    role="progressbar" aria-valuenow="75"
-                                                                    aria-valuemin="0" aria-valuemax="100"
-                                                                    style="width: 75%"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Machine Learning</td>
-                                                        <td><span class="badge badge-info">Professional</span></td>
-                                                        <td>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
-                                                                    role="progressbar" aria-valuenow="60"
-                                                                    aria-valuemin="0" aria-valuemax="100"
-                                                                    style="width: 60%"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Docker / DevOps</td>
-                                                        <td><span class="badge badge-info">Professional</span></td>
-                                                        <td>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-striped progress-bar bg-info"
-                                                                    role="progressbar" aria-valuenow="60"
-                                                                    aria-valuemin="0" aria-valuemax="100"
-                                                                    style="width: 60%"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Cloud</td>
-                                                        <td><span class="badge badge-warning">Academic</span></td>
-                                                        <td>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-striped progress-bar bg-warning"
-                                                                    role="progressbar" aria-valuenow="50"
-                                                                    aria-valuemin="0" aria-valuemax="100"
-                                                                    style="width: 50%"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>NoSQL</td>
-                                                        <td><span class="badge badge-danger">Novice</span></td>
-                                                        <td>
-                                                            <div class="progress">
-                                                                <div class="progress-bar progress-bar-striped progress-bar bg-danger"
-                                                                    role="progressbar" aria-valuenow="30"
-                                                                    aria-valuemin="0" aria-valuemax="100"
-                                                                    style="width: 30%"></div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <!-- /.tab-pane -->
 
@@ -324,36 +378,90 @@
                                             <ul class="list-group list-group-unbordered mb-3">
                                                 <li class="list-group-item">
                                                     <p>
-                                                        <b>HVAC Diagnostician</b> <span class="badge badge-light">Python
-                                                            Developer</span>
+                                                        <b>HVAC Diagnostician</b>
+                                                        <span class="badge badge-light">Python Developer</span>
+                                                        <span class="badge badge-light">Junior Data Scientist</span>
+                                                        <span class="badge badge-dark">Flask</span>
+                                                        <span class="badge badge-dark">jQuery</span>
                                                     </p>
                                                     <p>
-                                                        Member of Application Development team. Responsible for data
+                                                        Member of Application Development team responsible for data
                                                         extraction and consolidation to perform initial data analyses
-                                                        with exposure to complete development lifecycle including local
-                                                        and cloud deployments
+                                                        along with exposure to complete development lifecycle including
+                                                        local and cloud deployments of the product developed in Python
+                                                        (using Flask framework) and jQuery
+                                                    </p>
+                                                    <p>
+                                                        Involved in prototyping a Rule Engine with the ability to
+                                                        transform the features dynamically and compose rule-set from an
+                                                        external input
                                                     </p>
                                                 </li>
                                                 <li class="list-group-item">
                                                     <p>
-                                                        <b>Python-101</b><span class="badge badge-light">Mentor</span>
-                                                        <span class="badge badge-dark">Training</span>
+                                                        <b>Designing and Implementation of Solar Power Plant</b>
+                                                        <span class="badge badge-light">Python Developer</span>
+                                                        <span class="badge badge-dark">Python</span>
+                                                        <span class="badge badge-dark">Panel</span>
                                                     </p>
                                                     <p>
-                                                        Mentored 5 people in Python training set for new hires
+                                                        Developer of the application used in design and implementation
+                                                        of a solar power plant optimising the placement of panels with
+                                                        the goal of extracting maximum renewable energy
                                                     </p>
                                                 </li>
                                                 <li class="list-group-item">
                                                     <p>
                                                         <b>AI in Supply Chain Management</b>
                                                         <span class="badge badge-light">Dev Lead</span>
-                                                        <span class="badge badge-dark">Active</span>
+                                                        <span class="badge badge-dark">Flask</span>
+                                                        <span class="badge badge-dark">jQuery</span>
                                                     </p>
                                                     <p>
-                                                        Development Lead for an application to be developed in inventory
-                                                        management. Responsible for delivery of a full-stack product to
-                                                        be developed in Python using Flask
+                                                        Lead Developer for an application used in predicting procurement
+                                                        quantity to ensure optimal inventory with concepts of supply
+                                                        chain management along with the responsibility of delivering the
+                                                        full-stack product developed in Python (using Flask framework)
+                                                        and jQuery
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
 
+                                        <div class="tab-pane" id="publications">
+                                            <ul class="list-group list-group-unbordered mb-3">
+                                                <li class="list-group-item">
+                                                    <p>
+                                                        <b>Emotion Recognition on E-Learning Community to Improve the
+                                                            Learning Outcomes Using Machine Learning Concepts: A Pilot
+                                                            Study</b>
+                                                        <span class="badge badge-light">First Author</span>
+                                                        <span class="badge badge-dark">Python</span>
+                                                        <span class="badge badge-dark">Computer Vision</span>
+                                                        <span class="badge badge-dark">Cognition</span>
+                                                    </p>
+                                                    <p>
+                                                        Conference paper Published in Springer on 27 October 2019
+                                                    </p>
+                                                    <p>
+                                                        <a href="https://doi.org/10.1007/978-981-13-8406-6_50"
+                                                            target="_blank">Link to Publication</a>
+                                                    </p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <p>
+                                                        <b>Diabetic Retinopathy Detection using Deep Learning
+                                                            Techniques</b>
+                                                        <span class="badge badge-light">Python Developer</span>
+                                                        <span class="badge badge-dark">Python</span>
+                                                        <span class="badge badge-dark">Computer Vision</span>
+                                                    </p>
+                                                    <p>
+                                                        Published in Journal of Computer Science on 13 March 2020
+                                                    </p>
+                                                    <p>
+                                                        <a href="https://doi.org/10.3844/jcssp.2020.305.313"
+                                                            target="_blank">Link to Publication</a>
                                                     </p>
                                                 </li>
                                             </ul>
