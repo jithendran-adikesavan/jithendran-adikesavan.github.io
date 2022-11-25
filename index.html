@@ -1,529 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
+<title>Jithendran Adikesavan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif
+    }
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio of Jithendran">
-    <meta name="author" content="jithendran.adikesavan@gmail.com">
+    .w3-third img {
+        margin-bottom: -6px;
+        opacity: 0.8;
+        cursor: pointer
+    }
 
-    <title>Jithendran Adikesavan</title>
+    .w3-third img:hover {
+        opacity: 1
+    }
+</style>
 
-    <link rel="stylesheet" href="static/css/app.css">
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/bootstrap-grid.min.css">
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-</head>
- 
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-16 w3-center"><b>JITHENDRAN<br>ADIKESAVAN</b></h3>
+        <img src="static/img/profile.jpeg" alt="Me" class="w3-image" width="200" height="200">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+        <a href="#experience" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCE</a>
+        <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button">EDUCATION</a>
+        <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+        <a href="#publication" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATION</a>
+        <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
+        <a href="#awards" onclick="w3_close()" class="w3-bar-item w3-button">AWARDS & HONOURS</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
 
-<body class="hold-transition sidebar-mini" onload=display_ct()>
-    <div class="wrapper">
-        <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-            <!-- Main content -->
-            <section class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-3">
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">SOME NAME</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
 
-                            <!-- Profile Image -->
-                            <div class="card card-primary card-outline">
-                                <div class="card-body box-profile">
-                                    <div class="text-center">
-                                        <img class="profile-user-img img-fluid img-circle profile-picture"
-                                            src="static/img/profile.jpeg" alt="User profile picture">
-                                    </div>
-                                    <hr>
-                                    <h3 class="profile-username text-center">Jithendran Adikesavan</h3>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
 
-                                    <p class="text-muted text-center">Full Stack Engineer</p>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
 
-                                    <p id="current_time" style="text-align: center;"></p>
-                                </div>
-                                <!-- /.card-body -->
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
 
-                                <div class="card-footer">
-                                    <h5 class="profile-username text-center">Find me on</h5>
-                                    <div class="text-center">
-                                        <div class="btn-group">
-                                            <a type="button" class="btn btn-default btn-dark"
-                                                href="https://github.com/jithendran-adikesavan"
-                                                target="_blank"><b>GitHub</b>
-                                            </a>
+        <!-- About section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="about">
+            <h4><b>About Me</b></h4>
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>Jithendran Adikesavan</h4>
+                <p>
+                    Computer science engineer interested in designing and developing software curious about machine
+                    learning, distributed computing and its potential use in socially sensible apps; With strong
+                    capabilities in data engineering and developing numerically intensive algorithms including Algebra,
+                    Statistics and Probability with a professional experience of 3 years; Currently pursuing a
+                    postgraduate degree in the University of Sheffield, UK
+                </p>
 
-                                            <a type="button" class="btn btn-default" style="color: #f10767;"
-                                                href="https://www.instagram.com/jithendran.adikesavan/"
-                                                target="_blank"><b>Instagram</b>
-                                            </a>
-
-                                            <a type="button" class="btn btn-default btn-primary"
-                                                href="https://www.linkedin.com/in/jithendran-a/"
-                                                target="_blank"><b>LinkedIn</b></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /.card -->
-
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-md-9">
-                            <div class="card">
-                                <div class="card-header p-2">
-                                    <ul class="nav nav-pills">
-                                        <li class="nav-item"><a class="nav-link active" href="#about-me"
-                                                data-toggle="tab">About Me</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#experience"
-                                                data-toggle="tab">Experience</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#education"
-                                                data-toggle="tab">Education</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#skills"
-                                                data-toggle="tab">Skills</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#projects"
-                                                data-toggle="tab">Projects</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#publications"
-                                                data-toggle="tab">Publications</a></li>
-
-                                        <a type="button"
-                                            href="https://drive.google.com/file/d/1QDfHWZUT0qkKA02gcYMYJLtPqjnXOlRI/view?usp=sharing"
-                                            target="_blank"
-                                            class="btn btn-link">View Resume</a>
-                                    </ul>
-                                </div><!-- /.card-header -->
-                                <div class="card-body">
-                                    <div class="tab-content">
-                                        <div class="active tab-pane" id="about-me">
-                                            <p>
-
-                                                I am a full stack engineer passionate about designing and developing
-                                                products
-                                                in AI with interests in machine learning and data science, along with
-                                                strong capabilities in data engineering and developing numerically
-                                                intensive algorithms.
-                                            </p>
-                                            <p>
-                                                I am currently pursuing MSc in Advanced Computer
-                                                Science @ <a href="https://www.sheffield.ac.uk" target=”_blank”>The
-                                                    University of Sheffield</a>, UK
-                                            </p>
-                                            <p>
-                                                I was working with in the past @ <a href="https://www.gyandata.com"
-                                                    target=”_blank”>gyandata</a>
-                                                as a Junior Data Scientist.
-                                            </p>
-                                        </div>
-
-                                        <div class="tab-pane" id="experience">
-                                            <ul class="list-group list-group-unbordered mb-3">
-                                                <li class="list-group-item">
-                                                    <p>
-                                                        <b>gyandata</b> <span class="badge badge-dark">2019-2022</span>
-                                                        <span class="badge badge-light">Junior Data Scientist</span>
-                                                        <span class="badge badge-light">Python Developer</span>
-                                                    </p>
-                                                    <p>
-                                                        <a href="http://gyandata.com/" target=”_blank”></a>
-                                                        <hr>
-                                                        Member of the development team while delivering applications to
-                                                        key clients in engineering industries (refrigeration, solar
-                                                        power plant, supply-chain management etc.,)
-                                                        <hr>
-                                                        Mentored the Python-101 training program responsible for
-                                                        preparing new hires of the company to industry standards of
-                                                        coding
-                                                    </p>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="tab-pane" id="education">
-                                            <ul class="list-group list-group-unbordered mb-3">
-                                                <li class="list-group-item">
-                                                    <p>
-                                                        <b>School</b> <span class="badge badge-dark">2001 - 15</span>
-                                                        <span class="badge badge-light">10+2</span>
-                                                    </p>
-                                                    <p>
-                                                        <a href="http://shrishti.org/" target=”_blank”>Shrishti
-                                                            Vidhyashram Senior Secondary School</a>
-                                                        <hr>
-                                                        A serene campus on a 7-acre piece of
-                                                        land with an excellent infrastructure and teaching faculties,
-                                                        ensured my growth in a wide range of skills.
-                                                        <hr>
-                                                        Shrishti helped me
-                                                        secure a CGPA of <b>10</b> in Secondary School in 2013 and
-                                                        <b>94.4</b>%
-                                                        in Senior Secondary in 2015.
-                                                        <hr>
-                                                        Receiving an prestigious award <b>Best Outgoing Student</b> for
-                                                        the batch of 2014-15 was the topping on the cake.
-                                                    </p>
-                                                </li>
-                                                <li class="list-group-item">
-
-                                                    <p>
-                                                        <b>Undergraduate</b> <span class="badge badge-dark">2015 -
-                                                            19</span>
-                                                        <span class="badge badge-light">Bachelor of Technology</span>
-                                                    </p>
-                                                    <p>
-                                                        <a href="https://www.sastra.edu/" target=”_blank”>SASTRA Deemed
-                                                            University</a>
-                                                        <hr>
-                                                        Located in Thanjavur, a city known for its cultural and
-                                                        historical importance, Shanmugha Arts, Science, Technology and
-                                                        Research Academy (SASTRA) is one of India's premier
-                                                        institutions offering programs in a wide variety of domains
-                                                        <hr>
-                                                        Majored in Computer Science and Engineering with a CGPA of 8.57
-                                                        <hr>
-                                                        Member of <a
-                                                            href="https://www.linkedin.com/company/dakshsastra/?originalSubdomain=in"
-                                                            target=”_blank”>DASKH</a> Merchandise Team, <a
-                                                            href="https://www.instagram.com/sastra_nss/?hl=en"
-                                                            target=”_blank”>NSS Team</a> and University
-                                                        Handball Team broadened my horizon to make me a multi-facet team
-                                                        player.
-                                                        The experience gained by being a member of these teams helps me
-                                                        a great deal in leading a balanced professional life.
-                                                    </p>
-                                                </li>
-
-                                                <li class="list-group-item">
-
-                                                    <p>
-                                                        <b>Postgradurate</b> <span class="badge badge-dark">2022 -
-                                                            Present</span>
-                                                        <span class="badge badge-light">Master of Science</span>
-                                                    </p>
-                                                    <p>
-                                                        <a href="https://www.sheffield.ac.uk/"
-                                                            target=”_blank”>University of Sheffield</a>
-                                                        <hr>
-                                                        Currently pursuing MSc in Advanced Computer Science in a
-                                                        world-class university, among the top 100 institutes in the
-                                                        world, helps in getting global exposure and honing technical
-                                                        skills
-                                                        <hr>
-                                                        Member of a 3 member team which won the HackSheffield 7, a
-                                                        hackathon organized the Computer Society of Sheffield and Major
-                                                        League Hacking (MLH)
-                                                    </p>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-
-                                        <div class="tab-pane" id="skills">
-                                            <div class="card">
-                                                <div class="card-header p-2">
-                                                    <ul class="nav nav-pills">
-                                                        <li class="nav-item"><a class="nav-link active"
-                                                                href="#programming" data-toggle="tab">Programming
-                                                                Skills</a>
-                                                        </li>
-                                                        <li class="nav-item"><a class="nav-link" href="#technical"
-                                                                data-toggle="tab">Technologies Skills</a></li>
-                                                        <li class="nav-item"><a class="nav-link" href="#language"
-                                                                data-toggle="tab">Language Skills</a></li>
-                                                        <li class="nav-item"><a class="nav-link" href="#soft-skills"
-                                                                data-toggle="tab">Soft Skills</a></li>
-                                                    </ul>
-                                                </div><!-- /.card-header -->
-                                                <div class="card-body">
-                                                    <div class="tab-content">
-                                                        <div class="active tab-pane" id="programming">
-                                                            <table class="table m-0">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>Language</th>
-                                                                        <th>Experience Level</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Python</td>
-                                                                        <td><span
-                                                                                class="badge badge-success">Professional</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Java</td>
-                                                                        <td><span
-                                                                                class="badge badge-warning">Academic</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Kotlin</td>
-                                                                        <td><span
-                                                                                class="badge badge-warning">Academic</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>C++</td>
-                                                                        <td><span
-                                                                                class="badge badge-warning">Academic</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-
-                                                        <div class="tab-pane" id="technical">
-                                                            <table class="table m-0">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>Technology</th>
-                                                                        <th>Experience Level</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>RDBMS</td>
-                                                                        <td><span
-                                                                                class="badge badge-success">Professional</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>git</td>
-                                                                        <td><span
-                                                                                class="badge badge-success">Professional</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Machine Learning</td>
-                                                                        <td><span
-                                                                                class="badge badge-info">Academic</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Android</td>
-                                                                        <td><span
-                                                                                class="badge badge-info">Academic</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Docker / DevOps</td>
-                                                                        <td><span
-                                                                                class="badge badge-danger">Novice</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Cloud</td>
-                                                                        <td><span
-                                                                                class="badge badge-danger">Novice</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>NoSQL</td>
-                                                                        <td><span
-                                                                                class="badge badge-danger">Novice</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-
-                                                        <div class="tab-pane" id="language">
-                                                            <table class="table m-0">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>Language</th>
-                                                                        <th>Ability</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>Tamil</td>
-                                                                        <td><span class="badge badge-success">Mother
-                                                                                Tongue</span>
-                                                                            <span class="badge badge-dark">Speak</span>
-                                                                            <span class="badge badge-dark">Read</span>
-                                                                            <span class="badge badge-dark">Write</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>English</td>
-                                                                        <td><span class="badge badge-dark">Speak</span>
-                                                                            <span class="badge badge-dark">Read</span>
-                                                                            <span class="badge badge-dark">Write</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Hindi</td>
-                                                                        <td><span class="badge badge-dark">Read</span>
-                                                                            <span class="badge badge-dark">Write</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-
-                                                        <div class="tab-pane" id="soft-skills">
-
-                                                            <span class="badge badge-dark">Organisation</span>
-                                                            <span class="badge badge-dark">Analytical Thinking</span>
-                                                            <span class="badge badge-dark">Active Listening</span>
-                                                            <span class="badge badge-dark">Problem Solving</span>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- /.tab-pane -->
-
-                                        <div class="tab-pane" id="projects">
-                                            <ul class="list-group list-group-unbordered mb-3">
-                                                <li class="list-group-item">
-                                                    <p>
-                                                        <b>HVAC Diagnostician</b>
-                                                        <span class="badge badge-light">Python Developer</span>
-                                                        <span class="badge badge-light">Junior Data Scientist</span>
-                                                        <span class="badge badge-dark">Flask</span>
-                                                        <span class="badge badge-dark">jQuery</span>
-                                                    </p>
-                                                    <p>
-                                                        Member of Application Development team responsible for data
-                                                        extraction and consolidation to perform initial data analyses
-                                                        along with exposure to complete development lifecycle including
-                                                        local and cloud deployments of the product developed in Python
-                                                        (using Flask framework) and jQuery
-                                                    </p>
-                                                    <p>
-                                                        Involved in prototyping a Rule Engine with the ability to
-                                                        transform the features dynamically and compose rule-set from an
-                                                        external input
-                                                    </p>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <p>
-                                                        <b>Designing and Implementation of Solar Power Plant</b>
-                                                        <span class="badge badge-light">Python Developer</span>
-                                                        <span class="badge badge-dark">Python</span>
-                                                        <span class="badge badge-dark">Panel</span>
-                                                    </p>
-                                                    <p>
-                                                        Developer of the application used in design and implementation
-                                                        of a solar power plant optimising the placement of panels with
-                                                        the goal of extracting maximum renewable energy
-                                                    </p>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <p>
-                                                        <b>AI in Supply Chain Management</b>
-                                                        <span class="badge badge-light">Dev Lead</span>
-                                                        <span class="badge badge-dark">Flask</span>
-                                                        <span class="badge badge-dark">jQuery</span>
-                                                    </p>
-                                                    <p>
-                                                        Lead Developer for an application used in predicting procurement
-                                                        quantity to ensure optimal inventory with concepts of supply
-                                                        chain management along with the responsibility of delivering the
-                                                        full-stack product developed in Python (using Flask framework)
-                                                        and jQuery
-                                                    </p>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="tab-pane" id="publications">
-                                            <ul class="list-group list-group-unbordered mb-3">
-                                                <li class="list-group-item">
-                                                    <p>
-                                                        <b>Emotion Recognition on E-Learning Community to Improve the
-                                                            Learning Outcomes Using Machine Learning Concepts: A Pilot
-                                                            Study</b>
-                                                        <span class="badge badge-light">First Author</span>
-                                                        <span class="badge badge-dark">Python</span>
-                                                        <span class="badge badge-dark">Computer Vision</span>
-                                                        <span class="badge badge-dark">Cognition</span>
-                                                    </p>
-                                                    <p>
-                                                        Conference paper Published in Springer on 27 October 2019
-                                                    </p>
-                                                    <p>
-                                                        <a href="https://doi.org/10.1007/978-981-13-8406-6_50"
-                                                            target="_blank">Link to Publication</a>
-                                                    </p>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <p>
-                                                        <b>Diabetic Retinopathy Detection using Deep Learning
-                                                            Techniques</b>
-                                                        <span class="badge badge-light">Python Developer</span>
-                                                        <span class="badge badge-dark">Python</span>
-                                                        <span class="badge badge-dark">Computer Vision</span>
-                                                    </p>
-                                                    <p>
-                                                        Published in Journal of Computer Science on 13 March 2020
-                                                    </p>
-                                                    <p>
-                                                        <a href="https://doi.org/10.3844/jcssp.2020.305.313"
-                                                            target="_blank">Link to Publication</a>
-                                                    </p>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="tab-pane" id="resume">
-                                            <a href="">
-                                                View Resume</a>
-                                        </div>
-                                    </div>
-                                    <!-- /.tab-content -->
-                                </div><!-- /.card-body -->
-                            </div>
-                            <!-- /.card -->
-                        </div>
-                        <!-- /.col -->
-                    </div>
-                    <!-- /.row -->
-                </div><!-- /.container-fluid -->
-            </section>
-            <!-- /.content -->
+                <a href="https://drive.google.com/file/d/1Mj9PqydoWZF9wS_g6XAQdTC_eUSIFH2K/view?usp=share_link"
+                    target="_blank">
+                    <p class="w3-center"><button
+                            class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download
+                            Resume</button></p>
+                </a>
+            </div>
         </div>
+
+        <!-- Experience section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="experience">
+            <h4><b>Experience</b></h4>
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <a href="https://www.gyandata.com" target="_blank">
+                    <h4>gyandata</h4>
+                </a>
+                <h5 style="font-style:italic">Junior Data Scientist</h5>
+                <ul>
+                    <li>Member of the development team while delivering applications to key clients in engineering
+                        industries (refrigeration, solar power plant, supply-chain management)</li>
+                    <li>Mentored Python-101 training program responsible for preparing new hires of the company</li>
+                </ul>
+            </div>
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <a href="https://www.sastratbi.in/digiquality-2/" target="_blank">
+                    <h4>DigiQuality @ SASTRA TBI</h4>
+                </a>
+                <h5 style="font-style:italic">Intern</h5>
+                <ul>
+                    <li>Worked on developing an e-Catalogue for the sale of automotive parts with the ability to image
+                        search helping in reducing lookup time</li>
+                    <li>Submitted the report as my dissertation project for my graduation</li>
+                </ul>
+                <hr class="w3-opacity">
+            </div>
+        </div>
+
+        <!-- Education section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="education">
+            <h4><b>Education</b></h4>
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <a href="https://www.sheffield.ac.uk" target="_blank">
+                    <h4>University of Sheffield</h4>
+                </a>
+                <h6 class="w3-right">September 2022 - Present</h6>
+                <h5 style="font-style:italic">MSc in Advanced Computer Science</h5>
+            </div>
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <a href="https://www.sastra.edu" target="_blank">
+                    <h4>SASTRA Deemed University</h4>
+                </a>
+                <h6 class="w3-right">July 2015 - May 2019</h6>
+                <h5 style="font-style:italic">B.Tech in Computer Science and Engineering</h5>
+                <p>
+                    Graduated with a GPA of 8.57 on 10
+                </p>
+            </div>
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <a href="https://shrishtividyashram.edu.in/" target="_blank">
+                    <h4>Shrishti Schools</h4>
+                </a>
+                <h6 class="w3-right">June 2001 - April 2015</h6>
+                <ul>
+                    <li>Graduated with GPA of 10 on 10 in 10th Grade</li>
+                    <li>Graduated with 94.4% in 12th Grade</li>
+                </ul>
+                <hr class="w3-opacity">
+            </div>
+        </div>
+
+        <!-- Projects section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="projects">
+            <h4><b>Projects</b></h4>
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>Predictive Maintenance of HVAC Systems</h4> @ gyandata
+                <p>
+                    Member of the Application Development team responsible for data extraction and consolidation to
+                    perform initial data analyses along with exposure to the complete development lifecycle including
+                    local and cloud deployments of the product developed in Python (using Flask) and jQuery
+                </p>
+            </div>
+
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>Design & Implementation of Solar Power Plant</h4> @ gyandata
+                <p>
+                    Lead Developer of the application used in the design and implementation of a solar power plant
+                    optimising the placement of panels to extract maximum renewable energy
+                    Responsible for delivering a prototype in Python (using Panel)
+                </p>
+            </div>
+
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>AI in Supply Chain Management</h4> @ gyandata
+                <p>
+                    Lead Developer for an application used in predicting procurement quantity ensuring optimal inventory
+                    with the concepts of supply chain management and machine learning
+                    Responsible for delivering and deploying the AI app developed in Python (using Flask) and jQuery
+                </p>
+                <hr class="w3-opacity">
+            </div>
+        </div>
+
+        <!-- Publications section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="publications">
+            <h4><b>Publications</b></h4>
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>Diabetic Retinopathy Detection using Deep Learning Techniques</h4>
+                <p>
+                    Published in the <a href="https://doi.org/10.3844/jcssp.2020.305.313" target="_blank">Journal of
+                        Computer Science
+                    </a>
+                </p>
+            </div>
+
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>Emotion Recognition on E-Learning Community to Improve the Learning
+                    Outcomes Using Machine Learning Concepts: A Pilot Study</h4>
+                <p>
+                    Presented the paper at SSIC Conference which was later published in <a
+                        href="https://doi.org/10.1007/978-981-13-8406-6_50" target="_blank">Springer
+                    </a>
+                </p>
+                <hr class="w3-opacity">
+            </div>
+        </div>
+
+        <!-- Skills section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="skills">
+            <h4><b>Skills</b></h4>
+            <div class="w3-content w3-center" style="max-width:600px">
+                <div class="w3-third">
+                    <h4 class="w3-padding-16">Technical Skills</h4>
+                </div>
+                <div class="w3-twothird">
+                    <p class="w3-wide">Python</p>
+                    <p class="w3-wide">Machine Learning</p>
+                    <p class="w3-wide">Web Development</p>
+                    <p class="w3-wide">Android</p>
+                    <p class="w3-wide">Java</p>
+                    <p class="w3-wide">C++</p>
+                    <p class="w3-wide">git</p>
+                </div>
+                <div class="w3-third">
+                    <h4 class="w3-padding-16">Soft Skills</h4>
+                </div>
+                <div class="w3-twothird">
+                    <p class="w3-wide">Organisation</p>
+                    <p class="w3-wide">Analytical</p>
+                    <p class="w3-wide">Active Listening</p>
+                    <p class="w3-wide">Problem Solving</p>
+                </div>
+                <div class="w3-third">
+                    <h4 class="w3-padding-16">Language Skills</h4>
+                </div>
+                <div class="w3-twothird">
+                    <p class="w3-wide">Tamil</p>
+                    <p class="w3-wide">English</p>
+                    <p class="w3-wide">Hindi</p>
+                </div>
+            </div>
+        </div>
+        <!-- Awards section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="awards">
+            <h4><b>Awards & Honours</b></h4>
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>HackSheffield7</h4>
+                <p>
+                    Member of the team which secured the 1st prize in the hackathon organized by the Sheffield Computer
+                    Society
+                </p>
+            </div>
+
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>Dean's List Scholarship</h4>
+                <p>
+                    Awarded by SASTRA Deemed University for securing a position in the top 2% of the UG batch in terms
+                    of academic performance
+                </p>
+            </div>
+
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>Best Outgoing Student</h4>
+                <p>
+                    Awarded by Shrishti School for overall performance in school
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact section -->
+        <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+            <div class="w3-content w3-center" style="max-width:600px;">
+                <h4><b>Contact Me</b></h4>
+                <a href="mail:jithendran.adikesavan@gmail.com">Email</a> Me or Find me on
+                <a href="https://www.linkedin.com/in/jithendran-a/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+                title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+        <!-- End page content -->
     </div>
-    <!-- ./wrapper -->
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+    </script>
+
 
 </body>
 
-
-<!-- jQuery -->
-<script src="static/js/jquery-3.6.0.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="static/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="static/js/adminlte.min.js"></script>
-<!-- Demo JS (Not to be used in Production) -->
-<script src="static/js/demo.js"></script>
-
-<script type="text/javascript">
-    function display_c() {
-        var refresh = 1000; // Refresh rate in milli seconds
-        mytime = setTimeout('display_ct()', refresh)
-    }
-
-    function display_ct() {
-        var x = new Date()
-        var month = x.getMonth() + 1;
-        var day = x.getDate();
-        var year = x.getFullYear();
-        if (month < 10) { month = '0' + month; }
-        if (day < 10) { day = '0' + day; }
-        var x3 = day + '-' + month + '-' + year;
-
-        // time part //
-        var hour = x.getHours();
-        var minute = x.getMinutes();
-        var second = x.getSeconds();
-        if (hour < 10) { hour = '0' + hour; }
-        if (minute < 10) { minute = '0' + minute; }
-        if (second < 10) { second = '0' + second; }
-        var x3 = x3 + ' ' + hour + ':' + minute + ':' + second
-        document.getElementById('current_time').innerHTML = x3;
-        display_c();
-    }
-</script>
+</html>
