@@ -31,7 +31,7 @@
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
         style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-        <h3 class="w3-padding-16 w3-center"><b>JITHENDRAN<br>ADIKESAVAN</b></h3>
+        <h3 class=" w3-center"><b>JITHENDRAN<br>ADIKESAVAN</b></h3>
         <img src="static/img/profile-new.jpeg" alt="Me" class="w3-image" width="200" height="200">
         <a href="javascript:void(0)" onclick="w3_close()"
             class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
@@ -39,14 +39,15 @@
         <a href="#experience" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCE</a>
         <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button">EDUCATION</a>
         <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
-        <a href="#publication" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATION</a>
+        <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATION</a>
         <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
         <a href="#awards" onclick="w3_close()" class="w3-bar-item w3-button">AWARDS & HONOURS</a>
+        <a href="#extra_curricular" onclick="w3_close()" class="w3-bar-item w3-button">EXTRA-CURRICULAR</a>
         <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
     </nav>
 
     <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge ">
         <span class="w3-left w3-padding">JITHENDRAN ADIKESAVAN</span>
         <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
     </header>
@@ -62,7 +63,7 @@
         <div class="w3-hide-large" style="margin-top:83px"></div>
 
         <!-- About section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="about">
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="about">
             <h4><b>About Me</b></h4>
             <div class="w3-content w3-justify" style="max-width:600px">
                 <h4>Jithendran Adikesavan</h4>
@@ -82,8 +83,15 @@
             </div>
         </div>
 
+        <!-- Dummy block to insert a line after about section-->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey ">
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <hr class="w3-opacity">
+            </div>
+        </div>
+
         <!-- Experience section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="experience">
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="experience">
             <h4><b>Experience</b></h4>
             <div class="w3-content w3-justify" style="max-width:600px">
                 <a href="https://www.gyandata.com" target="_blank">
@@ -111,7 +119,7 @@
         </div>
 
         <!-- Education section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="education">
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="education">
             <h4><b>Education</b></h4>
             <div class="w3-content w3-justify" style="max-width:600px">
                 <a href="https://www.sheffield.ac.uk" target="_blank">
@@ -144,7 +152,7 @@
         </div>
 
         <!-- Projects section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="projects">
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="projects">
             <h4><b>Projects</b></h4>
             <div class="w3-content w3-justify" style="max-width:600px">
                 <h4>Predictive Maintenance of HVAC Systems</h4> @ gyandata
@@ -158,7 +166,7 @@
             <div class="w3-content w3-justify" style="max-width:600px">
                 <h4>Design & Implementation of Solar Power Plant</h4> @ gyandata
                 <p>
-                    Lead Developer of the application used in the design and implementation of a solar power plant
+                    Python Developer of the application used in the design and implementation of a solar power plant
                     optimising the placement of panels to extract maximum renewable energy
                     Responsible for delivering a prototype in Python (using Panel)
                 </p>
@@ -176,7 +184,7 @@
         </div>
 
         <!-- Publications section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="publications">
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="publications">
             <h4><b>Publications</b></h4>
             <div class="w3-content w3-justify" style="max-width:600px">
                 <h4>Diabetic Retinopathy Detection using Deep Learning Techniques</h4>
@@ -200,11 +208,11 @@
         </div>
 
         <!-- Skills section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="skills">
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="skills">
             <h4><b>Skills</b></h4>
             <div class="w3-content w3-center" style="max-width:600px">
                 <div class="w3-third">
-                    <h4 class="w3-padding-16">Technical Skills</h4>
+                    <h4 class="">Technical Skills</h4>
                 </div>
                 <div class="w3-twothird">
                     <p class="w3-wide">Python</p>
@@ -216,7 +224,7 @@
                     <p class="w3-wide">git</p>
                 </div>
                 <div class="w3-third">
-                    <h4 class="w3-padding-16">Soft Skills</h4>
+                    <h4 class="">Soft Skills</h4>
                 </div>
                 <div class="w3-twothird">
                     <p class="w3-wide">Organisation</p>
@@ -225,7 +233,7 @@
                     <p class="w3-wide">Problem Solving</p>
                 </div>
                 <div class="w3-third">
-                    <h4 class="w3-padding-16">Language Skills</h4>
+                    <h4 class="">Language Skills</h4>
                 </div>
                 <div class="w3-twothird">
                     <p class="w3-wide">Tamil</p>
@@ -234,8 +242,16 @@
                 </div>
             </div>
         </div>
+
+        <!-- Dummy block to insert a line after skills section-->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey ">
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <hr class="w3-opacity">
+            </div>
+        </div>
+
         <!-- Awards section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-8" id="awards">
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="awards">
             <h4><b>Awards & Honours</b></h4>
             <div class="w3-content w3-justify" style="max-width:600px">
                 <h4>HackSheffield7</h4>
@@ -258,11 +274,38 @@
                 <p>
                     Awarded by Shrishti School for overall performance in school
                 </p>
+                <hr class="w3-opacity">
             </div>
         </div>
 
+        <!-- Extra Curricular section -->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="extra_curricular">
+            <h4><b>Extra-Curricular</b></h4>
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>Stewarding</h4>
+                <p>
+                    Currently, participating as a security steward for the Sheffield Wednesday Football Club
+                </p>
+            </div>
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>Handball</h4>
+                <p>
+                    Member of the University Handball Team @ SASTRA Deemed University from 2015 to 2019 and represented
+                    the university in various sports competitions
+                </p>
+            </div>
+
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>NSS</h4>
+                <p>
+                    Member of the National Service Scheme @ SASTRA Deemed University from 2017 to 2019 and participated
+                    in various camps organized in nearby villages of Thanjavur
+                </p>
+                <hr class="w3-opacity">
+            </div>
+        </div>
         <!-- Contact section -->
-        <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+        <div class="w3-container w3-dark-grey" style="padding-bottom: 32px;" id="contact">
             <div class="w3-content w3-center" style="max-width:600px;">
                 <h4><b>Contact Me</b></h4>
                 <a href="mail:jithendran.adikesavan@gmail.com">Email</a> Me or Find me on
@@ -270,8 +313,9 @@
             </div>
         </div>
 
-        <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
-                title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+        <div class="w3-black w3-center w3-padding-24">This page is powered by <a
+                href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-opacity">w3.css</a></div>
 
         <!-- End page content -->
     </div>
