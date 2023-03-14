@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <style>
     body,
     h1,
@@ -12,7 +12,7 @@
     h3,
     h4,
     h5 {
-        font-family: "Raleway", sans-serif
+        font-family: "Roboto", sans-serif
     }
 
     .w3-third img {
@@ -24,323 +24,526 @@
     .w3-third img:hover {
         opacity: 1
     }
+
+    a:hover {
+        color: blue;
+    }
 </style>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
-    <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
-        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-        <h3 class=" w3-center"><b>JITHENDRAN<br>ADIKESAVAN</b></h3>
-        <img src="static/img/profile-new.jpeg" alt="Me" class="w3-image" width="200" height="200">
-        <a href="javascript:void(0)" onclick="w3_close()"
-            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
-        <a href="#experience" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCE</a>
-        <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button">EDUCATION</a>
-        <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
-        <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATION</a>
-        <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
-        <a href="#awards" onclick="w3_close()" class="w3-bar-item w3-button">AWARDS & HONOURS</a>
-        <a href="#extra_curricular" onclick="w3_close()" class="w3-bar-item w3-button">EXTRA-CURRICULAR</a>
-        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    </nav>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+     style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+    <h3 class=" w3-center"><b>JITHENDRAN<br>ADIKESAVAN</b></h3>
+    <img src="static/img/profile-new.jpeg" alt="Me" class="w3-image" width="200" height="200">
+    <a href="javascript:void(0)" onclick="w3_close()"
+       class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+    <a href="#experience" onclick="w3_close()" class="w3-bar-item w3-button">EXPERIENCE</a>
+    <a href="#education" onclick="w3_close()" class="w3-bar-item w3-button">EDUCATION</a>
+    <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+    <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATION</a>
+    <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
+    <a href="#awards" onclick="w3_close()" class="w3-bar-item w3-button">AWARDS & HONOURS</a>
+    <a href="#extra_curricular" onclick="w3_close()" class="w3-bar-item w3-button">EXTRA-CURRICULAR</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
 
-    <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge ">
-        <span class="w3-left w3-padding">JITHENDRAN ADIKESAVAN</span>
-        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
-    </header>
-
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge ">
+    <span class="w3-left w3-padding">JITHENDRAN</span>
+    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
-        title="close side menu" id="myOverlay"></div>
+         title="close side menu" id="myOverlay"></div>
+</header>
 
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:300px">
 
-        <!-- Push down content on small screens -->
-        <div class="w3-hide-large" style="margin-top:83px"></div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
 
-        <!-- About section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="about">
-            <h4><b>About Me</b></h4>
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <h4>Jithendran Adikesavan</h4>
-                <p>
-                    Computer science engineer interested in designing and developing software curious about machine
-                    learning, distributed computing and its potential use in socially sensible apps; With strong
-                    capabilities in data engineering and developing numerically intensive algorithms including Algebra,
-                    Statistics and Probability with a professional experience of 3 years; Currently pursuing a
-                    postgraduate degree in the University of Sheffield, UK
-                </p>
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:50px"></div>
 
-                <a href="static/Jithendran.pdf" target="_blank">
-                    <p class="w3-center"><button
+    <!-- About section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="about">
+        <h2><b>About Me</b></h2>
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <p>
+                I am a computer science engineer interested in designing and developing software curious about machine
+                learning, distributed computing and its potential use in socially sensible apps.
+            </p>
+            <p>
+                I have exhibited strong capabilities in software engineering and developing numerically intensive
+                algorithms with a professional experience of 3 years
+            </p>
+            <p>
+                I am currently pursuing a postgraduate degree in the University of Sheffield, UK
+            </p>
+
+            <a href="static/Jithendran.pdf" target="_blank">
+                <p class="w3-center">
+                    <button
                             class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download
-                            Resume</button></p>
-                </a>
-            </div>
+                        Resume
+                    </button>
+                </p>
+            </a>
         </div>
+    </div>
 
-        <!-- Dummy block to insert a line after about section-->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey ">
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <hr class="w3-opacity">
-            </div>
+    <!-- Dummy block to insert a line after about section-->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey ">
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <hr class="w3-opacity">
         </div>
+    </div>
 
-        <!-- Experience section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="experience">
-            <h4><b>Experience</b></h4>
-            <div class="w3-content w3-justify" style="max-width:600px">
+    <!-- Experience section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="experience">
+        <h2><b>Experience</b></h2>
+
+        <div class="w3-content w3-justify w3-border w3-border-white" style="max-width:600px">
+            <button onclick="toggleShow('gyandata')" class="w3-button w3-block w3-justify w3-round-xxlarge">
                 <a href="https://www.gyandata.com" target="_blank">
                     <h4>gyandata</h4>
                 </a>
-                <h5 style="font-style:italic">Junior Data Scientist</h5>
+                <div class="w3-row">
+                    <h6 class="w3-right">May 2019 - June 2022</h6>
+                    <h6 class="w3-left">Junior Data Scientist</h6>
+                </div>
+            </button>
+
+            <div id="gyandata" class="w3-container w3-hide w3-white w3-text-dark-grey">
+                <p>
                 <ul>
-                    <li>Member of the development team while delivering applications to key clients in engineering
-                        industries (refrigeration, solar power plant, supply-chain management)</li>
+                    <li>Developed and delivered web applications involving ML algorithms to key clients in engineering
+                        industries (refrigeration, solar power plant, supply-chain management etc.,)
+                    </li>
                     <li>Mentored Python-101 training program responsible for preparing new hires of the company</li>
+                    <li>Conducted feasibility studies in using frameworks for scaling and deploying ML models in
+                        production
+                        systems
+                    </li>
                 </ul>
+                </p>
             </div>
-            <div class="w3-content w3-justify" style="max-width:600px">
+        </div>
+
+        <div class="w3-content w3-justify w3-border w3-border-white" style="max-width:600px">
+            <button onclick="toggleShow('digiquality')" class="w3-button w3-block w3-justify w3-round-xxlarge">
                 <a href="https://www.sastratbi.in/digiquality-2/" target="_blank">
                     <h4>DigiQuality @ SASTRA TBI</h4>
                 </a>
-                <h5 style="font-style:italic">Intern</h5>
+                <div class="w3-row">
+                    <h6 class="w3-right">Dec 2018 - May 2019</h6>
+                    <h6 class="w3-left">Intern</h6>
+                </div>
+            </button>
+
+            <div id="digiquality" class="w3-container w3-hide w3-white w3-text-dark-grey">
+                <p>
                 <ul>
                     <li>Worked on developing an e-Catalogue for the sale of automotive parts with the ability to image
-                        search helping in reducing lookup time</li>
+                        search helping in reducing lookup time
+                    </li>
                     <li>Submitted the report as my dissertation project for my graduation</li>
                 </ul>
-                <hr class="w3-opacity">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dummy block to insert a line after experience section-->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey ">
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <hr class="w3-opacity">
+        </div>
+    </div>
+
+    <!-- Education section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="education">
+        <h2><b>Education</b></h2>
+
+        <div class="w3-content w3-justify w3-border w3-border-white" style="max-width:600px">
+            <button onclick="toggleShow('uos')" class="w3-button w3-block w3-justify w3-round-xxlarge">
+
+                <a href="https://www.sheffield.ac.uk" target="_blank"><h4>University of Sheffield</h4></a>
+
+                <div class="w3-row">
+                    <h6 class="w3-right" style="font-style: italic">Current</h6>
+                    <h6 class="w3-left">MSc Advanced Computer Science</h6>
+                </div>
+            </button>
+
+            <div id="uos" class="w3-container w3-hide w3-white w3-text-dark-grey">
+                <p>
+                    Key Modules in the coursework:
+                <ul>
+                    <li>
+                        Object Oriented Programming and Software Design (using Java)
+                    </li>
+                    <li>
+                        Machine Learning and Adaptive Intelligence (using Python)
+                    </li>
+                    <li>
+                        Software Development for Mobile Devices (using Kotlin)
+                    </li>
+                    <li>
+                        Parallel Computing using GPUs (using OpenMP and CUDA)
+                    </li>
+                    <li>
+                        The Intelligent Web (using Node.JS)
+                    </li>
+                    <li>
+                        Theory of Distributed Systems
+                    </li>
+                </ul>
+                </p>
             </div>
         </div>
 
-        <!-- Education section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="education">
-            <h4><b>Education</b></h4>
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <a href="https://www.sheffield.ac.uk" target="_blank">
-                    <h4>University of Sheffield</h4>
-                </a>
-                <h6 class="w3-right">September 2022 - Present</h6>
-                <h5 style="font-style:italic">MSc in Advanced Computer Science</h5>
-            </div>
-            <div class="w3-content w3-justify" style="max-width:600px">
+        <div class="w3-content w3-justify w3-border w3-border-white" style="max-width:600px">
+            <button onclick="toggleShow('sastra')" class="w3-button w3-block w3-justify w3-round-xxlarge">
+
                 <a href="https://www.sastra.edu" target="_blank">
                     <h4>SASTRA Deemed University</h4>
                 </a>
-                <h6 class="w3-right">July 2015 - May 2019</h6>
-                <h5 style="font-style:italic">B.Tech in Computer Science and Engineering</h5>
+                <div class="w3-row">
+                    <h6 class="w3-right">July 2015 - May 2019</h6>
+                    <h6 class="w3-left">B.Tech Computer Science and Engineering</h6>
+                </div>
+
+            </button>
+
+            <div id="sastra" class="w3-container w3-hide w3-white w3-text-dark-grey">
+                <p>Graduated with a GPA of 8.57 on 10</p>
                 <p>
-                    Graduated with a GPA of 8.57 on 10
-                </p>
-            </div>
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <a href="https://shrishtividyashram.edu.in/" target="_blank">
-                    <h4>Shrishti Schools</h4>
-                </a>
-                <h6 class="w3-right">June 2001 - April 2015</h6>
+                    Key Modules in the coursework:
                 <ul>
-                    <li>Graduated with GPA of 10 on 10 in 10th Grade</li>
-                    <li>Graduated with 94.4% in 12th Grade</li>
+                    <li>
+                        Database Management Systems
+                    </li>
+                    <li>
+                        Discrete Mathematics
+                    </li>
+                    <li>
+                        Data Structures
+                    </li>
+                    <li>
+                        Design and Analysis of Algorithms
+                    </li>
+                    <li>
+                        Digital Electronics
+                    </li>
+                    <li>
+                        Computer Architecture
+                    </li>
+                    <li>
+                        Operating Systems
+                    </li>
+                    <li>
+                        Computer Networks
+                    </li>
+                    <li>
+                        Artificial Intelligence
+                    </li>
+                    <li>
+                        Machine Learning
+                    </li>
                 </ul>
-                <hr class="w3-opacity">
+                </p>
+
             </div>
         </div>
+    </div>
 
-        <!-- Projects section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="projects">
-            <h4><b>Projects</b></h4>
-            <div class="w3-content w3-justify" style="max-width:600px">
+    <!-- Dummy block to insert a line after education section-->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey ">
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <hr class="w3-opacity">
+        </div>
+    </div>
+
+    <!-- Projects section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="projects">
+        <h2><b>Projects</b></h2>
+
+        <div class="w3-content w3-justify w3-border w3-border-white" style="max-width:600px">
+
+            <button onclick="toggleShow('hvac')" class="w3-button w3-block w3-justify">
                 <h4>Predictive Maintenance of HVAC Systems</h4> @ gyandata
+            </button>
+
+            <div id="hvac" class="w3-container w3-hide w3-white w3-text-dark-grey">
                 <p>
                     Member of the Application Development team responsible for data extraction and consolidation to
                     perform initial data analyses along with exposure to the complete development lifecycle including
                     local and cloud deployments of the product developed in Python (using Flask) and jQuery
                 </p>
             </div>
+        </div>
 
-            <div class="w3-content w3-justify" style="max-width:600px">
+        <div class="w3-content w3-justify w3-border w3-border-white" style="max-width:600px">
+            <button onclick="toggleShow('solar')" class="w3-button w3-block w3-justify">
                 <h4>Design & Implementation of Solar Power Plant</h4> @ gyandata
+            </button>
+
+            <div id="solar" class="w3-container w3-hide w3-white w3-text-dark-grey">
                 <p>
                     Python Developer of the application used in the design and implementation of a solar power plant
                     optimising the placement of panels to extract maximum renewable energy
+                </p>
+                <p>
                     Responsible for delivering a prototype in Python (using Panel)
                 </p>
             </div>
+        </div>
 
-            <div class="w3-content w3-justify" style="max-width:600px">
+        <div class="w3-content w3-justify w3-border w3-border-white" style="max-width:600px">
+            <button onclick="toggleShow('scm')" class="w3-button w3-block w3-justify">
                 <h4>AI in Supply Chain Management</h4> @ gyandata
+            </button>
+
+            <div id="scm" class="w3-container w3-hide w3-white w3-text-dark-grey">
                 <p>
                     Lead Developer for an application used in predicting procurement quantity ensuring optimal inventory
                     with the concepts of supply chain management and machine learning
+                </p>
+                <p>
                     Responsible for delivering and deploying the AI app developed in Python (using Flask) and jQuery
                 </p>
-                <hr class="w3-opacity">
             </div>
         </div>
-
-        <!-- Publications section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="publications">
-            <h4><b>Publications</b></h4>
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <h4>Diabetic Retinopathy Detection using Deep Learning Techniques</h4>
-                <p>
-                    Published in the <a href="https://doi.org/10.3844/jcssp.2020.305.313" target="_blank">Journal of
-                        Computer Science
-                    </a>
-                </p>
-            </div>
-
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <h4>Emotion Recognition on E-Learning Community to Improve the Learning
-                    Outcomes Using Machine Learning Concepts: A Pilot Study</h4>
-                <p>
-                    Presented the paper at SSIC Conference which was later published in <a
-                        href="https://doi.org/10.1007/978-981-13-8406-6_50" target="_blank">Springer
-                    </a>
-                </p>
-                <hr class="w3-opacity">
-            </div>
-        </div>
-
-        <!-- Skills section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="skills">
-            <h4><b>Skills</b></h4>
-            <div class="w3-content w3-center" style="max-width:600px">
-                <div class="w3-third">
-                    <h4 class="">Technical Skills</h4>
-                </div>
-                <div class="w3-twothird">
-                    <p class="w3-wide">Python</p>
-                    <p class="w3-wide">Machine Learning</p>
-                    <p class="w3-wide">Web Development</p>
-                    <p class="w3-wide">Android</p>
-                    <p class="w3-wide">Java</p>
-                    <p class="w3-wide">C++</p>
-                    <p class="w3-wide">git</p>
-                </div>
-                <div class="w3-third">
-                    <h4 class="">Soft Skills</h4>
-                </div>
-                <div class="w3-twothird">
-                    <p class="w3-wide">Organisation</p>
-                    <p class="w3-wide">Analytical</p>
-                    <p class="w3-wide">Active Listening</p>
-                    <p class="w3-wide">Problem Solving</p>
-                </div>
-                <div class="w3-third">
-                    <h4 class="">Language Skills</h4>
-                </div>
-                <div class="w3-twothird">
-                    <p class="w3-wide">Tamil</p>
-                    <p class="w3-wide">English</p>
-                    <p class="w3-wide">Hindi</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Dummy block to insert a line after skills section-->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey ">
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <hr class="w3-opacity">
-            </div>
-        </div>
-
-        <!-- Awards section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="awards">
-            <h4><b>Awards & Honours</b></h4>
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <h4>HackSheffield7</h4>
-                <p>
-                    Member of the team which secured the 1st prize in the hackathon organized by the Sheffield Computer
-                    Society
-                </p>
-            </div>
-
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <h4>Dean's List Scholarship</h4>
-                <p>
-                    Awarded by SASTRA Deemed University for securing a position in the top 2% of the UG batch in terms
-                    of academic performance
-                </p>
-            </div>
-
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <h4>Best Outgoing Student</h4>
-                <p>
-                    Awarded by Shrishti School for overall performance in school
-                </p>
-                <hr class="w3-opacity">
-            </div>
-        </div>
-
-        <!-- Extra Curricular section -->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="extra_curricular">
-            <h4><b>Extra-Curricular</b></h4>
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <h4>Stewarding</h4>
-                <p>
-                    Currently, participating as a security steward for the Sheffield Wednesday Football Club
-                </p>
-            </div>
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <h4>Handball</h4>
-                <p>
-                    Member of the University Handball Team @ SASTRA Deemed University from 2015 to 2019 and represented
-                    the university in various sports competitions
-                </p>
-            </div>
-
-            <div class="w3-content w3-justify" style="max-width:600px">
-                <h4>NSS</h4>
-                <p>
-                    Member of the National Service Scheme @ SASTRA Deemed University from 2017 to 2019 and participated
-                    in various camps organized in nearby villages of Thanjavur
-                </p>
-                <hr class="w3-opacity">
-            </div>
-        </div>
-        <!-- Contact section -->
-        <div class="w3-container w3-dark-grey" style="padding-bottom: 32px;" id="contact">
-            <div class="w3-content w3-center" style="max-width:600px;">
-                <h4><b>Contact Me</b></h4>
-                <a href="mail:jithendran.adikesavan@gmail.com">Email</a> Me or Find me on
-                <a href="https://www.linkedin.com/in/jithendran-a/" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-
-        <div class="w3-black w3-center w3-padding-24">This page is powered by <a
-                href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-                class="w3-hover-opacity">w3.css</a></div>
-
-        <!-- End page content -->
     </div>
 
-    <script>
-        // Script to open and close sidebar
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
+    <!-- Dummy block to insert a line after projects section-->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey ">
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <hr class="w3-opacity">
+        </div>
+    </div>
 
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
+    <!-- Publications section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="publications">
+        <h2><b>Publications</b></h2>
 
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
+        <div class="w3-content w3-justify w3-border w3-border-white" style="max-width:600px">
+            <button onclick="toggleShow('diab')" class="w3-button w3-block w3-justify">
+                <h5>Diabetic Retinopathy Detection using Deep Learning Techniques</h5> @ SASTRA
+            </button>
 
-    </script>
+            <div id="diab" class="w3-container w3-hide w3-white w3-text-dark-grey">
+                <p>
+                    Collaborated with faculties from the department
+                </p>
+                <p>
+                    Developed deep learning models using Python and tensorflow
+                </p>
+                <p>
+                    Published the findings in <a href="https://doi.org/10.3844/jcssp.2020.305.313" target="_blank">Journal
+                    of Computer Science </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-content w3-justify w3-border w3-border-white" style="max-width:600px">
+            <button onclick="toggleShow('emotion')" class="w3-button w3-block w3-justify">
+                <h5>Emotion Recognition on E-Learning Community</h5> @ SASTRA
+            </button>
+
+            <div id="emotion" class="w3-container w3-hide w3-white w3-text-dark-grey">
+                <p>Collaborated with a faculty and peers from the department</p>
+                <p>Authored the literature study</p>
+                <p>Developed models using Python and scikit-learn</p>
+                <p>Presented the findings at SSIC Conference which was later published in <a
+                        href="https://doi.org/10.1007/978-981-13-8406-6_50" target="_blank">Springer</a> with the
+                    title Emotion Recognition on E-Learning Community to Improve the Learning
+                    Outcomes Using Machine Learning Concepts: A Pilot Study</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dummy block to insert a line after publications section-->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey ">
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <hr class="w3-opacity">
+        </div>
+    </div>
+
+    <!-- Skills section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="skills">
+        <h2><b>Skills</b></h2>
+
+        <div class="w3-content w3-center" style="max-width:600px">
+            <div class="w3-third">
+                <div class="w3-card-4">
+
+                    <header class="w3-container">
+                        <h3>Technical Skills</h3>
+                    </header>
+
+                    <div class="w3-container">
+                        <p class="w3-wide">Software Engineering</p>
+                        <p class="w3-wide">Machine Learning</p>
+                        <p class="w3-wide">Object Oriented Programming</p>
+                        <p class="w3-wide">System Design</p>
+                        <p class="w3-wide">Relational DBMS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <div class="w3-card-4">
+
+                    <header class="w3-container">
+                        <h3>Soft Skills</h3>
+                    </header>
+
+                    <div class="w3-container">
+                        <p class="w3-wide">Organisation</p>
+                        <p class="w3-wide">Analytical</p>
+                        <p class="w3-wide">Active Listening</p>
+                        <p class="w3-wide">Problem Solving</p>
+                        <p class="w3-wide">Time Management</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <div class="w3-card-4">
+
+                    <header class="w3-container">
+                        <h3>Literary Skills</h3>
+                    </header>
+
+                    <div class="w3-container">
+                        <p class="w3-wide">Tamil</p>
+                        <p class="w3-wide">English</p>
+                        <p class="w3-wide">Hindi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dummy block to insert a line after skills section-->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey ">
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <hr class="w3-opacity">
+        </div>
+    </div>
+
+    <!-- Awards section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="awards">
+        <h2><b>Awards & Honours</b></h2>
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <h4>ShefJam9</h4>
+            <p>
+                Member of the team which secured the Best newcomer in the hackathon organized by the Sheffield Computer
+                Society
+            </p>
+        </div>
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <h4>HackSheffield7</h4>
+            <p>
+                Member of the team which secured the 1st prize in the hackathon organized by the Sheffield Computer
+                Society
+            </p>
+        </div>
+
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <h4>Dean's List Scholarship</h4>
+            <p>
+                Awarded by SASTRA Deemed University for securing a position in the top 2% of the UG batch in terms
+                of academic performance
+            </p>
+        </div>
+
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <h4>Best Outgoing Student</h4>
+            <p>
+                Awarded by Shrishti School for overall performance in school
+            </p>
+            <hr class="w3-opacity">
+        </div>
+    </div>
+
+    <!-- Extra Curricular section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey " id="extra_curricular">
+        <h2><b>Extra-Curricular</b></h2>
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <h4>Stewarding</h4>
+            <p>
+                Volunteering as a security steward for the Sheffield Wednesday Football Club
+            </p>
+        </div>
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <h4>Handball</h4>
+            <p>
+                Member of the University Handball Team @ SASTRA Deemed University from 2015 to 2019 and represented
+                the university in various sports competitions
+            </p>
+        </div>
+
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <h4>NSS</h4>
+            <p>
+                Member of the National Service Scheme @ SASTRA Deemed University from 2017 to 2019 and participated
+                in various camps organized in nearby villages of Thanjavur
+            </p>
+            <hr class="w3-opacity">
+        </div>
+    </div>
+    <!-- Contact section -->
+    <div class="w3-container w3-dark-grey" style="padding-bottom: 32px;" id="contact">
+        <div class="w3-content w3-center" style="max-width:600px;">
+            <h2><b>Contact Me</b></h2>
+            <a href="mail:jithendran.adikesavan@gmail.com">Email</a> Me or Find me on
+            <a href="https://www.linkedin.com/in/jithendran-a/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+    <div class="w3-container w3-white">
+        <div class="w3-center w3-small">This page is powered by <a
+                href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-opacity">w3.css</a></div>
+    </div>
+    <!-- End page content -->
+</div>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+    function toggleShow(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+
+</script>
 
 
 </body>
